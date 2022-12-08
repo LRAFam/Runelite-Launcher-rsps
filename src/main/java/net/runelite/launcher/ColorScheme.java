@@ -4,6 +4,8 @@ import java.awt.Color;
 
 public class ColorScheme
 {
+
+	//ye let me just fix these links rq
 	/* The blue color used for the branding's accents */
 	public static final Color BRAND = new Color(220, 138, 0);
 

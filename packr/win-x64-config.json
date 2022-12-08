@@ -1,9 +1,9 @@
 {
   "platform": "windows64",
   "jdk": "win64-jdk",
-  "executable": "Elvarg",
+  "executable": "Teragard",
   "classpath": [
-    "target/Elvarg.jar"
+    "target/Teragard.jar"
   ],
   "mainclass": "net.runelite.launcher.Launcher",
   "vmargs": [

@@ -1,10 +1,10 @@
 [Setup]
-AppName=Elvarg Launcher
-AppPublisher=Elvarg
-UninstallDisplayName=Elvarg
+AppName=Teragard Launcher
+AppPublisher=Teragard
+UninstallDisplayName=Teragard
 AppVersion=${project.version}
-AppSupportURL=https://elvarg.net/
-DefaultDirName={localappdata}\Elvarg
+AppSupportURL=https://teragard-reborn.com/
+DefaultDirName={localappdata}\Teragard
 
 ; ~30 mb for the repo the launcher downloads
 ExtraDiskSpaceRequired=30000000
@@ -14,13 +14,13 @@ PrivilegesRequired=lowest
 WizardSmallImageFile=${basedir}/app_small.bmp
 WizardImageFile=${basedir}/left.bmp
 SetupIconFile=${basedir}/app.ico
-UninstallDisplayIcon={app}\Elvarg.exe
+UninstallDisplayIcon={app}\Teragard.exe
 
 Compression=lzma2
 SolidCompression=yes
 
 OutputDir=${basedir}
-OutputBaseFilename=ElvargSetup32
+OutputBaseFilename=TeragardSetup32
 
 [Tasks]
 Name: DesktopIcon; Description: "Create a &desktop icon";
@@ -29,20 +29,20 @@ Name: DesktopIcon; Description: "Create a &desktop icon";
 Source: "${basedir}\app.ico"; DestDir: "{app}"
 Source: "${basedir}\left.bmp"; DestDir: "{app}"
 Source: "${basedir}\app_small.bmp"; DestDir: "{app}"
-Source: "${basedir}\native-win32\Elvarg.exe"; DestDir: "{app}"
-Source: "${basedir}\native-win32\Elvarg.jar"; DestDir: "{app}"
+Source: "${basedir}\native-win32\Teragard.exe"; DestDir: "{app}"
+Source: "${basedir}\native-win32\Teragard.jar"; DestDir: "{app}"
 Source: "${basedir}\native\build32\Release\launcher_x86.dll"; DestDir: "{app}"
 Source: "${basedir}\native-win32\config.json"; DestDir: "{app}"
 Source: "${basedir}\native-win32\jre\*"; DestDir: "{app}\jre"; Flags: recursesubdirs
 
 [Icons]
 ; start menu
-Name: "{userprograms}\Elvarg"; Filename: "{app}\Elvarg.exe"
-Name: "{userdesktop}\Elvarg"; Filename: "{app}\Elvarg.exe"; Tasks: DesktopIcon
+Name: "{userprograms}\Teragard"; Filename: "{app}\Teragard.exe"
+Name: "{userdesktop}\Teragard"; Filename: "{app}\Teragard.exe"; Tasks: DesktopIcon
 
 [Run]
-Filename: "{app}\Elvarg.exe"; Parameters: "--postinstall"; Flags: nowait
-Filename: "{app}\Elvarg.exe"; Description: "&Open Elvarg"; Flags: postinstall skipifsilent nowait
+Filename: "{app}\Teragard.exe"; Parameters: "--postinstall"; Flags: nowait
+Filename: "{app}\Teragard.exe"; Description: "&Open Teragard"; Flags: postinstall skipifsilent nowait
 
 [InstallDelete]
 ; Delete the old jvm so it doesn't try to load old stuff with the new vm and crash
